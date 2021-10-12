@@ -23,11 +23,17 @@ namespace RockPaperScissors.Game.Player
             OptionName optionName;
             Console.WriteLine("- Available Options:");
             Console.WriteLine(optionFactory.AvailableOptions());
-            Console.WriteLine("Choose an option: ");
-            if (int.TryParse(Console.ReadLine(), out int option) && Enum.IsDefined(typeof(OptionName), option))
-                optionName = (OptionName)option;
-            else
-                optionName = default;
+            do
+            {
+                Console.WriteLine("Choose an option: ");
+                if (int.TryParse(Console.ReadLine(), out int option) && Enum.IsDefined(typeof(OptionName), option))
+                    optionName = (OptionName)option;
+                else
+                {
+                    Console.WriteLine("!!! Please choose an available option !!!");
+                    optionName = default;
+                }
+            } while (optionName == default);
 
             return optionFactory.GetOption(optionName);
         }

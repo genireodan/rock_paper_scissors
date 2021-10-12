@@ -26,7 +26,7 @@ namespace RockPaperScissors.Game
             IPartyModeFactory partyModeFactory = new PartyModeFactory();
             do
             {
-                Console.WriteLine("########## Welcome To Rock Paper Scissors Game ##########");
+                Console.WriteLine($"{new string('#', 10)} Welcome To Rock Paper Scissors Game {new string('#', 10)}");
                 Console.WriteLine("- Please choose a mode");
                 Console.WriteLine(partyModeFactory.AvailableModes());
                 Console.WriteLine("Choose a mode: ");
