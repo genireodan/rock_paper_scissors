@@ -21,6 +21,7 @@ namespace RockPaperScissors.Game.Option
                 case OptionName.Paper: return new PaperOption();
                 case OptionName.Rock: return new RockOption();
                 case OptionName.Scissors: return new ScissorsOption();
+                case OptionName.FlameThrower: return new FlameThrowerOption();
                 default: return null;
             }
         }

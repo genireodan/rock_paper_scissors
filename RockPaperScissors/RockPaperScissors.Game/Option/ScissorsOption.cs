@@ -11,7 +11,7 @@ namespace RockPaperScissors.Game.Option
         public ScissorsOption()
         {
             OptionName = OptionName.Scissors;
-            beatableOptions = new List<OptionName> { OptionName.Paper };
+            beatableOptions = new List<OptionName> { OptionName.Paper, OptionName.FlameThrower };
         }
     }
 }

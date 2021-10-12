@@ -10,7 +10,8 @@ namespace RockPaperScissors.Game.Option
     {
         Rock = 1,
         Paper,
-        Scissors
+        Scissors,
+        FlameThrower
     }
 
     public interface IOption
